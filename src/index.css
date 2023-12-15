@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Merriweather+Sans&family=Open+Sans:wght@300;700&family=Poppins:wght@200;400&family=Roboto:wght@100;300;400;700&family=Ubuntu:wght@300;400&family=Varela+Round&display=swap');
+
+ /* fb #385185
+  forgot pass rgb(0, 55, 107)
+  sign up #0064e0
+  login  rgb( 0, 149, 246)
+ */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter,sans-serif ;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+.insta_logo{
+  width: 175px;
+  height: 51px;
+  margin: 0 auto 2rem auto;
+}
+.fb_logo{
+  height: 16px;
+  width: 16px;
+}
+.get_the_app_img img{
+  height: 40px;
+}
+
+input{
+  font-size: 12px;
+  border: 1px solid rgb(222, 218, 218);
+  padding: 10px;
+  outline: none;
+  background: rgb(249, 249, 249);
+  border-radius: 2px;
+  margin: 5px 0;
+  width: 80%;
+
+}
+button{
+  padding: 10px;
+  border-radius: 9px;
+  border: none;
+  color: white;
+  background-color: rgb( 0, 149, 246);
+  font-weight: 600;
+  opacity: .7;
+  margin: 1.2rem 0;
+  width: 80%;
+  display: grid;
+  place-items: center;
+}
+input:focus{
+  border: 1px solid rgb(167, 166, 166);
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(222, 218, 218);
+  padding: 2rem 0;
+}
+.container , .main , .dont_have_account{
+  display: grid;
+  place-items: center;
+}
+.main{
+  margin: 3rem 0;
+  width: min(350px, 90%);
+}
+.dont_have_account , .form , .get_the_app{
+  width: 100%;
+}
+.or{
+  text-align: center;
+  font-size: 15px;
+  color:grey;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.or::before{
+  content: '';
+  position: absolute;
+  height: 1px ;
+  width: 100px;
+  background-color: rgb(191, 191, 191);
+  top: 50%;
+  right: 1.5rem;
+}
+.or::after{
+  content: '';
+  position: absolute;
+  height: 1px ;
+  width: 95px;
+  background-color: rgb(191, 191, 191);
+  top: 50%;
+  left: 1.5rem;
+}
+.fb{
+  color:#385185 ;
+  font-weight: 700;
+}
+.forgot_pass, .forgot_pass:visited{
+   color: rgb(0, 55, 107);
+   margin-top: 1rem;
+}
+.dont_have_account{
+  border: 1px solid rgb(222, 218, 218);
+  padding: 1.5rem;
+  margin: 1rem ;
+}
+.dont_have_account a, .dont_have_account a:visited{
+  color: #0064e0 ;
+}
+.get_the_app{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.get_the_app_img{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 5px;
+}
+.input{
+  width: 80%;
+  position: relative;
+}
+.input input{
+  width: 100%;
+  padding-right: 4rem ;
+}
+.input span{
+  position: absolute;
+  right: 1rem;
+  top:25%;
+  cursor: pointer;
+  user-select: none;
+}
+
+button , .input span , .fb {
+  cursor: pointer;
+}
+.splashScreen{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.splashScreen img{
+  width: 50px;
+}
+
+.from_meta{
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.from_meta p{
+  font-size: larger;
+}
+.from_meta img{
+  width: 100px;
+}
+
+
+@media screen and (max-width:380px) {
+  .main input, .main button , .get_the_app_img , .input{
+    width: 95%;
+  }
+}
+/* ----------------------------------home----------------------------------------- */
+
+nav{
+  width: 100%;
+  height: 3.5rem;
+  background: rgba(255, 0, 123, 0.144);
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(50px);
+}
+.logo{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 2rem;
+}
+.logo img{
+  width: 50px;
+}
+ .logo p{
+  font-family: Roboto ;
+  font-size: 1.3rem;
+  color: rgb(0, 0, 0);
+}
+.logo span{
+  color: rgb(255, 0, 106);
+  font-weight: bold;
+}
+
+.home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: max-content;
+  margin: 0 auto;
+  padding: 3rem 2rem 5rem 2rem;
+  background: rgba(255, 0, 140, 0.131);
+  position: relative;
+}
+
+.intro{
+  font-size:3rem;
+  font-weight: 900;
+  font-family: merriweather sans;
+  background-image: linear-gradient(to right, #8902ff, 
+  #ff9a4d, #ff2848, #eedd44);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+   background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.home p{
+  font-family: inter;
+  font-size: 1.1rem;
+  color: rgb(31, 31, 31);
+  margin: 1rem ;
+  text-align: center;
+}
+.home h4{
+  margin-bottom:1rem;
+  font-family: Roboto;
+  font-size: 1.2rem;
+  font-weight: 400;
+  width: 80%;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.home span{
+  color: rgb(255, 0, 106);
+  font-weight: bolder;
+}
+
+.perma , .perma:visited , .perma:active {
+  text-decoration: underline;
+  color: #0073ff;
+}
+
+.home button{
+  width: max-content;
+  height: max-content;
+  padding: 1rem .8rem;
+  text-transform: uppercase;
+  border-radius: 0;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 1rem;
+  background: rgb(255, 0, 60) ;
+}
+
+.home_background_curve{
+  width: 100%;
+  height: 100%;
+  clip-path: circle(55.2% at 90% 47%);
+  background: rgba(255, 0, 43, 0.097);
+  z-index: -1;
+  position: absolute;
+}
+
+
+.home-top-img{
+  width: 100px;
+  
+}
+
+.follow, .like{
+  position: absolute;
+  opacity: .7;
+}
+.like{
+  bottom: 15%;
+  right: 10%;
+  width: 100px;
+  transform: rotate(30deg);
+
+}
+.follow{
+  bottom: 10%;
+  left: 10%;
+  width: 150px;
+  transform: rotate(-10deg);
+}
+
+
+
+/* -------------------------------------get followers -------------------------------------------------- */
+
+.get_followers{
+  width: 100%;
+  padding: 6rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #00ddff2d;
+  position: relative;
+}
+
+.select , .get_followers button{
+  width: 500px;
+  text-transform: uppercase;
+  font-family: Roboto;
+}
+select{
+  width: 100%;
+  height: 2rem;
+  margin: 1rem 0;
+  font-family: Roboto;
+  outline: none;
+}
+.get_followers button{
+  background: #ff2848;
+  font-weight: 400;
+}
+
+
+/* -------------------------------------steps-------------------------------------------- */
+
+.steps{
+  width: 100%;
+  height: max-content;
+  padding: 5rem 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #a6a6a63f;
+}
+h3{
+  text-transform: capitalize;
+  font-weight: 700;
+  font-family: Poppins;
+  color: #1a1a1a;
+  margin: 1rem 0;
+}
+
+.step{
+  width: min(700px, 95%);
+  height: max-content;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 5px;
+ box-shadow: 2px 3px 15px 2px rgba(161, 161, 161, 0.282);
+}
+.step h2{
+  text-transform: capitalize;
+}
+.step p{
+  font-family: poppins;
+  margin: .3rem;
+}
+.step img{
+  width: 90%;
+  margin:1rem 0;
+  border: 1px solid grey;
+}
+.step_img_cont{
+  display: grid;
+  place-items: center;
+}
+
+
+
+/* ----------------------footer--------------------------------- */
+.footer{
+  padding: 5rem 1rem;
+  font-family: inter;
+  text-transform: capitalize;
+  color: white;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(145deg,rgba(235, 1, 91, 0.885),rgb(255, 4, 4),rgb(255, 66, 8));
+}
+.footer a{
+  font-family: inter;
+  color: white;
+  font-weight: 100;
+  text-decoration: underline;
+  margin:.7rem 0;
+}
+.links{
+  margin: 1rem 0 2rem 0;
+  width: min(600px,80%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+
+}
+
+
+
+/* ----------------------media ------------------------------- */
+
+@media screen and (max-width:800px){
+  .home_background_curve{
+    clip-path: circle(65.2% at 100% 47%);
+  }
+  .like{
+    bottom: 5%;
+    right: 5%;
+    width: 80px;
+    transform: rotate(30deg);
+  
+  }
+  .follow{
+    bottom: 5%;
+    left: 5%;
+    width: 110px;
+    transform: rotate(-10deg);
+}
+}
+
+@media screen and (max-width:680px){
+
+
+  .home-top-img{
+    width: 90px;
+  }
+  .logo{
+    padding-left: 1rem ;
+  }
+  .home{
+    padding:3rem 1rem 5rem 1rem;
+  }
+  .steps{
+    padding: 5rem 1rem;
+  }
+  .home h4{
+    width: 90%;
+    font-size:1rem ;
+  }
+}
+
+@media screen and (max-width:580px){
+  .like{
+    width: 55px;
+  }
+  .follow{
+    width: 100px;
+  }
+  .logo img{
+    width: 40px;
+  }
+  .intro{
+    font-size: 2.3rem;
+  }
+
+  .home-top-img{
+    width: 60px;
+  }
+  .home{
+    padding:1rem .5rem 5rem .5rem;
+  }
+  .steps{
+    padding: 4rem .5rem;
+  }
+  .step{
+    padding: .6rem;
+  }
+  .step img{
+    width: 95%;
+  }
+  .home h4{
+    width: 95%;
+  }
+
+  .home_background_curve{
+    clip-path: circle(75.2% at 110% 47%);
+  }
+
+  .select , .get_followers button{
+    width: 300px;
+  }
+}
+
+@media screen and (max-width:460px){
+
+  .home h4{
+    font-size:1rem;
+    }
+  .intro{
+    font-size: 2rem;
+  }
+  .home p{
+    font-size:.9rem;
+  }
+  .home button{
+    padding: .7rem .5rem;
+  }
+
+  .home_background_curve{
+    clip-path: circle(85.2% at 140% 50%);
+  }
+
+  .logo{
+    padding-left: .5rem ;
+  }
+  .home-top-img{
+    width: 55px;
+  }
+  .like{
+    bottom: 2%;
+    right: 7%;
+    width: 55px;
+  }
+  .follow{
+    bottom: 0%;
+    left: 10%;
+  }
+}
+
+@media screen and (max-width:370px){
+  .select , .get_followers button{
+    width: 250px;
+  }
+}
+
+.custom-loader {
+  width: 16px;
+  height: 16px;
+  display: grid;
+  border-radius: 50%;
+  -webkit-mask:radial-gradient(farthest-side,#0000 40%,#000 41%);
+  background:
+    linear-gradient(0deg ,#F4F4F480 50%,#F4F4F4FF 0) center/2px 100%,
+    linear-gradient(90deg,#F4F4F440 50%,#F4F4F4BF 0) center/100% 2px;
+  background-repeat: no-repeat;
+  animation: s3 1s infinite steps(12);
+}
+.custom-loader::before,
+.custom-loader::after {
+   content:"";
+   grid-area: 1/1;
+   border-radius: 50%;
+   background:inherit;
+   opacity: 0.915;
+   transform: rotate(30deg);
+}
+.custom-loader::after {
+   opacity: 0.83;
+   transform: rotate(60deg);
+}
+
+@keyframes s3 {
+  100% {transform: rotate(1turn)}
+}
+
+.congrats{
+  display: grid;
+  place-items: center;
+  height: 80vh;
+  grid-template-rows: 1fr;
+  text-align: center;
+  padding: 1rem;
+  word-break: break-all;
+}
