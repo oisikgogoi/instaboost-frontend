@@ -14,10 +14,10 @@ function Home() {
          <div className='home ' id='home'>
 
           <div className='home_background_curve'></div>
-          <img className='home-top-img' src='./public/bg-attr-5.png'/>
+          <img className='home-top-img' src='/bg-attr-5.png'/>
 
-          <img src="./public/bg-attr.png" className='follow'  />
-          <img src="./public/like.png" className='like' />
+          <img src="/bg-attr.png" className='follow'  />
+          <img src="/like.png" className='like' />
           <h1 className='intro'>get free followers</h1>
             <p >
                 looking for an effective cheat to boost your social media?
@@ -26,7 +26,7 @@ function Home() {
             <h4>Get up to <span>50 free followers</span> daily with the help of InstaBoost with just a few clicks. <a className='perma' href='#get_followers'> get started  </a>.</h4>
               <h4>still not enough? Dont worry , we have <span>referral rewards </span> which gives you <span> 10 extra followers</span> everytime your friend uses instaboost tools ! <a className='perma' href='#steps'>see how?</a></h4> 
          
-         <a href={'#get_followers'}><button>get followers</button></a>
+         <a href={'#get_followers'}><button>get followers</button> </a>
          
          </div>
 
@@ -49,17 +49,17 @@ function Home() {
             <Steps 
               step_no={'1'}
               step_desc={'Select the number of followers and click get followers.'}
-              img={'./public/step_1.png'}
+              img={'/step_1.png'}
             />
             <Steps  
             step_no={'2'}
             step_desc={'Login to your instagram. *note( We dont hold any of your information )'}
-            img={'./public/step_2.png'}/>
+            img={'/step_2.png'}/>
             <Steps
             step_no={'3'}
             step_desc={'Congratulations !! You have recieved your followers !'}
             step_3_desc={`Once you have completed all the steps , u will get your referal link, which can be shared with your friends , so that u will  recieve 10 followers everytime ur friend uses instaboost to boost their following .`}
-            img={'./public/step_3.png'}
+            img={'/step_3.png'}
             />
             
          </div>
