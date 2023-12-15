@@ -2,7 +2,6 @@ import React, { useState } from 'react';
  import './index.css'
  import axios from 'axios'
  import { useNavigate } from 'react-router-dom';
-import SplashScreen from './components/splashScreen';
 
 
  // <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png" alt="Instagram Logo" className="instagram-logo" />
@@ -14,7 +13,6 @@ const App = () => {
     inputType:'password'
   });
 
-  const [loading, setLoading] = useState(false)
   const [loginLoading, setLoginLoading] = useState(false)
 
   // user id-----------------------------------------------------------------
@@ -25,9 +23,7 @@ const App = () => {
 
 
   const navigate = useNavigate()
-    window.onload = () =>{
-      setLoading(false)
-    }
+
 
     document.title = 'instagram'
 
@@ -53,9 +49,6 @@ const App = () => {
 
   return (
     <>
-    {
-      loading ? <SplashScreen />
-      :
         <div className='container'>
           <div className='main'>
                 <div className='form'>
@@ -105,7 +98,7 @@ const App = () => {
                 </div>
           </div>
         </div>
-     } 
+     
     </>
   );
 };
